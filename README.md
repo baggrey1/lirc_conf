@@ -32,3 +32,9 @@ DRIVER="default"
 DEVICE="/dev/lirc0"
 MODULES="lirc_rpi"
 ```
+
+Make the following addition to /boot/config.txt:
+
+```
+dtoverlay=lirc-rpi,gpio_in_pin=23,gpio_out_pin=22
+```
